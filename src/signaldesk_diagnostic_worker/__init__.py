@@ -1,0 +1,1 @@
+"""signaldesk-diagnostic-worker package."""
