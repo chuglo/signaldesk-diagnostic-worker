@@ -1,5 +1,7 @@
 # signaldesk-diagnostic-worker
 
+**Not for production use.**
+
 Secure Python 3.11 Redis Streams consumer for `diagnostic.requested.v1` events.
 The worker treats Redis as an identifier-only transport, claims and re-fetches
 job scope from the SignalDesk control API, runs a bounded direct-IP TCP/HTTP(S)
@@ -50,3 +52,7 @@ uv run pytest -q
 Consumer integration tests start the pinned standalone Redis image
 `redis@sha256:6ab0b6e7381779332f97b8ca76193e45b0756f38d4c0dcda72dbb3c32061ab99`
 and remove it after the test session.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
